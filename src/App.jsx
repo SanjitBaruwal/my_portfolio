@@ -26,15 +26,15 @@ const App = () => {
 
   return (
     <main>
-      {isMobile ? (
+      {/* {isMobile ? (
         <>
           <Navbar />
           <FloatingNav />
         </>
       ) : (
         <Navbar />
-      )}
-      {/* <Navbar /> */}
+      )} */}
+      <Navbar />
       <Header />
       <About />
       <Services />
