@@ -1,6 +1,8 @@
 header {
   display: grid;
   place-items: center;
+  margin-top: 5rem;
+  height: calc(100vh - 5rem);
   transition: var(--transition);
 }
 
@@ -65,6 +67,10 @@ header {
 
 /* media queries (mobiles) */
 @media screen and (max-width: 600px) {
+  header {
+    margin-top: 0;
+    height: 100vh;
+  }
   .header__profile {
     width: 14rem;
     height: 17rem;
