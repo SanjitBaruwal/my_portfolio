@@ -70,4 +70,7 @@ textarea {
   .contact__container {
     grid-template-columns: var(--container-width-sm);
   }
+  .contact__option {
+    padding: 1.2rem 0;
+  }
 }

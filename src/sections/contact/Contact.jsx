@@ -9,19 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
-  // const [feedback, setFeedback] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-
-  // const handelChange = (e) => {
-  //   setFeedback({
-  //     ...feedback,
-  //     [e.target.name]: [e.target.value],
-  //   });
-  // };
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -33,11 +20,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          // setFeedback({
-          //   name: "",
-          //   email: "",
-          //   message: "",
-          // });
           e.target.reset();
           toast.success("Thank you for your feedback", {
             position: "top-center",
@@ -67,7 +49,7 @@ const Contact = () => {
           <article className="contact__option">
             <RiMessengerFill className="contact__option_icon" />
             <h4>Messenger</h4>
-            <h6>सन्जित बरुवाल</h6>
+            <h6>Baruwal Sanjit</h6>
             <a href="https://m.me/sanjit.baruwal.1" target="_blank">
               Send a message
             </a>
@@ -85,8 +67,6 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            // value={feedback.name}
-            // onChange={handelChange}
             placeholder="Your Full Name"
             required
           />

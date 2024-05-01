@@ -1,7 +1,7 @@
 import "./About.css";
-import AboutImg from "../../assets/profile3.JPG";
+import AboutImg from "../../assets/PURWANCHAL CAMPUS.jpg";
 import { AiOutlineDownload } from "react-icons/ai";
-import CV from "../../assets/erc.jpg";
+import CV from "../../assets/cv.pdf";
 import Card from "../../components/Card";
 import data from "../../components/data";
 

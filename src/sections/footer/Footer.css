@@ -2,6 +2,7 @@ footer {
   position: relative;
   width: 100%;
   background: #690cc6;
+  border-top: solid transparent;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;

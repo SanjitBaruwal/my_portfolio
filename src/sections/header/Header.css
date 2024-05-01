@@ -13,11 +13,17 @@ header {
   position: relative;
 }
 .header__profile {
+  border: 2px solid var(--color-primary);
   width: 18rem;
   height: 22rem;
   border-radius: 9rem 9rem 2rem 2rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  position: relative;
+}
+.header__profile img{
+  position: absolute;
+  bottom: 0;
 }
 
 .header__container p {
@@ -60,17 +66,13 @@ header {
 /* media queries (tablets) */
 @media screen and (max-width: 1024px) {
   header {
-    margin-top: 0;
-    height: 100vh;
+    margin-top: 5rem;
+    height: calc(100vh - 5rem);
   }
 }
 
 /* media queries (mobiles) */
 @media screen and (max-width: 600px) {
-  header {
-    margin-top: 0;
-    height: 100vh;
-  }
   .header__profile {
     width: 14rem;
     height: 17rem;

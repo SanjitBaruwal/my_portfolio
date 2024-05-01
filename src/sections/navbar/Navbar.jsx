@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import data from "./data";
-import profile from "../../assets/profile4.JPG";
+import profile from "../../assets/sanjit.JPG";
 import { IoIosColorPalette } from "react-icons/io";
 const Navbar = () => {
   return (

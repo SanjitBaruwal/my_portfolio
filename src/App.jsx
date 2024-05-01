@@ -25,7 +25,7 @@ const App = () => {
   }, []);
 
   return (
-    <main>
+    <main style={{ overflowX: "hidden" }}>
       {/* {isMobile ? (
         <>
           <Navbar />

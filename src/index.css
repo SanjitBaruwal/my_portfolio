@@ -6,7 +6,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /* overflow-x: hidden; */
 }
 :root {
   --color-bg: #1f1f38;
@@ -20,6 +19,9 @@
   --color-light: #f0eff0;
   --color-black: #262428;
   --color-dark: #706b76;
+
+  /* general body variables */
+  --body-width: 100%;
 
   /* general container variables */
   --container-width-lg: 75%;
@@ -47,6 +49,8 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   font-size: 0.9rem;
+  width: var(--body-width);
+  /* border: 2px solid red; */
   /* 0.9*16px = 14.4 px */
 }
 
@@ -60,6 +64,7 @@ body {
 /* general section style */
 section {
   width: 100vw;
+  overflow: hidden;
   padding: 10rem 0;
   background: var(--color-light);
   transition: var(--transition);
@@ -68,6 +73,7 @@ section {
 section:nth-child(even) {
   background: var(--color-white);
 }
+
 section > h2,
 section > h5 {
   text-align: center;
