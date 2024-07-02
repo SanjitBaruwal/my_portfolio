@@ -8,7 +8,7 @@ import Testimonials from "../src/sections/testimonials/Testimonials";
 import FAQs from "../src/sections/faqs/FAQs";
 import Contact from "../src/sections/contact/Contact";
 import Footer from "../src/sections/footer/Footer";
-import FloatingNav from "../src/sections/floating-nav/FloatingNav";
+// import FloatingNav from "../src/sections/floating-nav/FloatingNav";
 import Portfolio from "./portfolio/Portfolio";
 
 const App = () => {

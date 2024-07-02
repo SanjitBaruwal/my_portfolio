@@ -1,51 +1,51 @@
-import img1 from "../assets/portfolio1.jpg";
-import img2 from "../assets/portfolio2.jpg";
-import img3 from "../assets/portfolio3.jpg";
-import img4 from "../assets/portfolio4.jpg";
-import img5 from "../assets/portfolio5.png";
-import img6 from "../assets/portfolio6.jpg";
+import img1 from "../assets/todo.png";
+import img2 from "../assets/weather.png";
+import img3 from "../assets/Rock Scissor Paper.png";
+import img4 from "../assets/notes.jpg";
+import img5 from "../assets/hospital.png";
+import img6 from "../assets/library.jpg";
 
 const data = [
   {
     id: 1,
     image: img1,
-    title: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixel",
+    title: "Todo App Save, Your Task Locally.",
+    github: "https://github.com/SanjitBaruwal/Todo-App",
+    demo: "https://savetask.netlify.app/",
   },
   {
     id: 2,
     image: img2,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixel",
+    title: "Weather App",
+    github: "https://github.com/SanjitBaruwal/React_Weather?tab=readme-ov-file",
+    demo: "#",
   },
   {
     id: 3,
     image: img3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixel",
+    title: "Rock Scissors Paper",
+    github: "https://github.com/SanjitBaruwal/Rock_Scissors_Paper",
+    demo: "https://rockscissorpep.netlify.app",
   },
   {
     id: 4,
     image: img4,
-    title: "Maintaining tasks and tracking progress",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixel",
+    title: "Keep Notes",
+    github: "https://github.com/SanjitBaruwal/Keep_Note",
+    demo: "https://keepnotes1.netlify.app",
   },
   {
     id: 5,
     image: img5,
-    title: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixel",
+    title: "Hospital Management System",
+    github: "https://github.com/SanjitBaruwal/Hospital-Management-System",
+    demo: "https://hospital-management-system-patient.vercel.app",
   },
   {
     id: 6,
     image: img6,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
+    title: "Library Management System",
+    github: "https://github.com/SanjitBaruwal/Library-Management-System",
     demo: "https://dribbble.com/Alien_pixel",
   },
 ];
