@@ -4,6 +4,8 @@ import img3 from "../assets/Rock Scissor Paper.png";
 import img4 from "../assets/notes.jpg";
 import img5 from "../assets/hospital.png";
 import img6 from "../assets/library.jpg";
+import img7 from "../assets/address.png";
+import img8 from "../assets/anpr.png";
 
 const data = [
   {
@@ -46,7 +48,22 @@ const data = [
     image: img6,
     title: "Library Management System",
     github: "https://github.com/SanjitBaruwal/Library-Management-System",
-    demo: "https://dribbble.com/Alien_pixel",
+    demo: "#",
+  },
+  {
+    id: 7,
+    image: img7,
+    title: "Nepal Address Api",
+    github: "https://github.com/SanjitBaruwal/Nepal_Location_API",
+    demo: "https://nepal-location-api-client.vercel.app",
+  },
+  {
+    id: 8,
+    image: img8,
+    title: "Number Plate Detection System",
+    github:
+      "https://github.com/rajeevy397/Nepali_Vehicle_License_Plate_Detector_And_Reader_YOLOv8",
+    demo: "#",
   },
 ];
 
