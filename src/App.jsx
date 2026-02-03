@@ -11,10 +11,11 @@ import Footer from "../src/sections/footer/Footer";
 import Portfolio from "./portfolio/Portfolio";
 
 const App = () => {
-  const [setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1024); // Assuming tablet width is 768px
+      setIsMobile(window.innerWidth <= 1024);
     };
 
     window.addEventListener("resize", handleResize);
