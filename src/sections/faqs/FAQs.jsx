@@ -1,12 +1,6 @@
-import "./FAQs.css";
-import React, { useState } from "react";
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-} from "@mui/material";
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import "./FAQs.css";
 
 import questions from "./data";
 
