@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  /* --color-primary:#4db5ff; */
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  /* --color-light:rgba(255,255,255,0.6); */
+
+  --color-primary: #690cc6;
+  --color-white: #fff;
+  --color-light: #f0eff0;
+  --color-black: #262428;
+  --color-dark: #706b76;
+
+  /* general body variables */
+  --body-width: 100%;
+
+  /* general container variables */
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  /* Borarder radius variable */
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /* general transition variables */
+  --transition: all 500ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-x {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  width: var(--body-width);
+  /* border: 2px solid red; */
+  /* 0.9*16px = 14.4 px */
+}
+
+/* general container class */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  /* max-width: 1920px; */
+}
+
+/* general section style */
+section {
+  width: 100vw;
+  overflow: hidden;
+  padding: 10rem 0;
+  background: var(--color-light);
+  transition: var(--transition);
+}
+
+section:nth-child(even) {
+  background: var(--color-white);
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: #898686;
+}
+
+section > h2 {
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+section > p {
+  text-align: center;
+  margin: 0.5ren auto 4rem;
+  width: 40%;
+}
+
+/* general section style */
+a {
+  color: var(--color-white);
+  transition: var(--transition);
+}
+/* general headings style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 0.95rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+/* general images styles */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* general button styles */
+.btn {
+  width: max-content;
+  display: inline-block;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-light);
+  color: var(--color-black);
+  padding: 0.6rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  transform: translateY(-0.5 rem);
+}
+
+.white {
+  background: var(--color-white);
+  border: 1px solid var(--color-light);
+}
+
+.white:hover {
+  background: transparent;
+}
+
+.primary {
+  background: var(--color-primary);
+  /* text color always white that's why i didn't use a variable color */
+  color: white;
+  transition: var(--transition);
+}
+
+.primary:hover {
+  background: transparent;
+  color: var(--color-primary);
+}
+
+/* media queries (tablet) */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+    padding: 8rem 0;
+  }
+
+  section > p {
+    width: 42%;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding-inline-start: 0.6rem 1.5rem;
+  }
+
+  section > p {
+    width: var(--container-width-md);
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}

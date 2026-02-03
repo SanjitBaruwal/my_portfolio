@@ -1,0 +1,17 @@
+.faq__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.accordion__details {
+  border-top: 2px solid var(--color-white);
+  border-radius: 1rem;
+}
+/* media query for mobiles */
+@media screen and (max-width: 600px) {
+  .faq__container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
